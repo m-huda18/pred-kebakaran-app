@@ -7,3 +7,4 @@ folium>=0.17.1
 tensorflow>=2.14.0,<3.0
 openmeteo-requests==1.7.5
 requests>=2.32.0
+streamlit-folium==0.27.2
