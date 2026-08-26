@@ -1,0 +1,66 @@
+{
+  "window_size": 14,
+  "train_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "val_year": 2022,
+  "test_years": [
+    2023,
+    2024,
+    2025
+  ],
+  "batch_size": 256,
+  "epochs": 100,
+  "patience": 15,
+  "learning_rate": 0.001,
+  "dropout_rate": 0.2,
+  "lstm_units": [
+    64,
+    32
+  ],
+  "min_fire_days": 5,
+  "feature_cols": [
+    "t2m_celsius",
+    "tp_mm",
+    "rh",
+    "wind_speed",
+    "precip_roll7",
+    "precip_roll14",
+    "precip_roll30",
+    "hotspot_roll7",
+    "hotspot_roll14",
+    "hotspot_roll30",
+    "fire_lag1",
+    "fire_lag3",
+    "fire_lag7",
+    "month",
+    "day_of_year",
+    "dry_season",
+    "elnino",
+    "risk_score",
+    "risk_category",
+    "consec_dry_days"
+  ],
+  "target_col": "fire_occurred",
+  "optimal_threshold": 0.8799999999999996,
+  "risk_categories": {
+    "1": "Rendah",
+    "2": "Sedang",
+    "3": "Tinggi"
+  },
+  "risk_colors": {
+    "1": "#2ecc71",
+    "2": "#f39c12",
+    "3": "#e74c3c"
+  },
+  "model_path": "models/lstm_model",
+  "scaler_path": "models/scaler_features.pkl",
+  "zone_labels_path": "outputs/zone_labels.parquet",
+  "merged_data_path": "outputs/merged_with_zones.parquet"
+}

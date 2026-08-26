@@ -1,0 +1,10 @@
+{
+  "grid_res": 0.25,
+  "lat_min": -2.9,
+  "lat_max": 3.3,
+  "lon_min": 99.0,
+  "lon_max": 105.5,
+  "n_grids": 650,
+  "year_start": 2015,
+  "year_end": 2025
+}
